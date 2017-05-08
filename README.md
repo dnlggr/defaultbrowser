@@ -7,7 +7,7 @@ Swift script and Alfred workflow to change the default browser on macOS.
 To run the Swift script: 
 
 1. 🚧 Make it executable: `chmod +x defaultbrowser.swift`
-2. 🚀 Run it: `./defaultbrowser <browser>`
+2. 🚀 Run it: `./defaultbrowser.swift <browser>`
 3. 👍 Acknowledge the system popup asking you if you're sure what you're doing.
 
 ### Examples
