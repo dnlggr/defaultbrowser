@@ -1,8 +1,8 @@
-# Default Browser 💻 🚀 🌍
+# macOS Default Browser CLI 👉 💻 🌍
 
-Swift package to change the default web browser on macOS from the command line.
+A Swift package to change the default web browser on macOS from the command line.
 
-## Installation
+## 🏗 Installation
 
 The easiest way to install the `default-browser` CLI is by running:
 
@@ -10,7 +10,7 @@ The easiest way to install the `default-browser` CLI is by running:
 brew install dnlggr/tap/default-browser
 ```
 
-## Usage
+## 🚀 Usage
 
 You can change your default web browser, list all available browsers, and list the current default browser.
 
@@ -46,6 +46,6 @@ To list the current default web browser, run:
 default-browser current
 ```
 
-## Contributing
+## 🤓 Contributing
 
-🤓 Feel free to share ideas and criticism or open pull requests.
+Feel free to share ideas and criticism or open pull requests.
