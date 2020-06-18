@@ -1,41 +1,51 @@
-# defaultbrowser 💻 🚀 🌍
+# Default Browser 💻 🚀 🌍
 
-Swift script and Alfred workflow to change the default browser on macOS.
+Swift package to change the default web browser on macOS from the command line.
 
-## Swift
+## Installation
 
-To run the Swift script: 
-
-1. 🚧 Make it executable: `chmod +x defaultbrowser.swift`
-2. 🚀 Run it: `./defaultbrowser.swift <browser>`
-3. 👍 Acknowledge the system popup asking you if you're sure what you're doing.
-
-### Examples
-
-Change the default browser to *Chrome*:
+The easiest way to install the `default-browser` CLI is by running:
 
 ``` bash
-./defaultbrowser.swift chrome
-``` 
+brew install dnlggr/tap/default-browser
+```
 
-Change the default browser to *Safari*:
+## Usage
+
+You can change your default web browser, list all available browsers, and list the current default browser.
+
+### Set Default Web Browser
+
+To set the default web browser, run:
 
 ``` bash
-./defaultbrowser.swift safari
-``` 
+default-browser set <browser>
+```
 
-You get the point.
+Some common examples for `<browser>` are: `safari`, `chrome`, `firefox`, etc.
 
-## Alfred Workflow
+For exmaple. To set the default web browser to Firefox, run:
 
-Download the repository and open the `defaultbrowser.alfredworkflow` file. The keyword is `db` and expects the browser you want to set as default as an argument.
+``` bash
+default-browser set firefox
+```
 
-At the moment, the workflow is very basic. Nice features would be:
+### List Available Browsers
 
-- Showing the matching available browsers while typing such as [this](https://github.com/ngreenstein/alfred-process-killer) workflow that shows matching processes while typing
-- A cool icon
-- Anything more you might like
+To list all the browsers which you can set as default web browsers, run:
+
+``` bash
+default-browser list
+```
+
+### List Current Default Browser
+
+To list the current default web browser, run:
+
+``` bash
+default-browser current
+```
 
 ## Contributing
 
-🤓 Feel free to share ideas, criticism and open pull requests.
+🤓 Feel free to share ideas and criticism or open pull requests.
