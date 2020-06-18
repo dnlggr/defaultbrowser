@@ -12,6 +12,7 @@ let package = Package(
             "DefaultBrowserCore",
             .product(name: "ArgumentParser", package: "swift-argument-parser")
         ]),
-        .target(name: "DefaultBrowserCore")
+        .target(name: "DefaultBrowserCore"),
+        .testTarget(name: "DefaultBrowserCoreTests", dependencies: ["DefaultBrowserCore"])
     ]
 )
