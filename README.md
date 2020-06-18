@@ -49,3 +49,9 @@ default-browser current
 ## 🤓 Contributing
 
 Feel free to share ideas and criticism or open pull requests.
+
+## Attribution
+
+There is already a similar tool available through brew: [kerma/defaultbrowser](https://github.com/kerma/defaultbrowser).
+The purpose of this little project was mainly for me to get a chance to play around with Swift Package Manager.
+I already wrote the code to change the default web browser a couple of years ago for a different project (see version [1.0.0](https://github.com/dnlggr/DefaultBrowser/releases/tag/1.0.0)).
