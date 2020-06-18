@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# macOS Default Browser CLI 👉 💻 🌍
-=======
-# Default Browser 👉 💻 🌍
->>>>>>> 58c8c990f197127e4f0e6d6f139630c5c130fc16
+# 👉 💻 🌍 macOS Default Browser CLI
 
 A Swift package to change the default web browser on macOS from the command line.
 
