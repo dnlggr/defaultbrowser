@@ -4,7 +4,7 @@ import DefaultBrowserCore
 struct CommandLineTool: ParsableCommand {
     static let configuration = CommandConfiguration(
         commandName: "default-browser",
-        abstract: "Manages the system's default browser.",
+        abstract: "Manages the system's default web browser.",
         subcommands: [Set.self, List.self, Current.self]
     )
 }
