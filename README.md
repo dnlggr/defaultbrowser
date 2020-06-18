@@ -18,7 +18,7 @@ You can change your default web browser, list all available browsers, and list t
 
 To set the default web browser, run:
 
-``` bash
+```
 default-browser set <browser>
 ```
 
@@ -26,7 +26,7 @@ Some common examples for `<browser>` are: `safari`, `chrome`, `firefox`, etc.
 
 For exmaple. To set the default web browser to Firefox, run:
 
-``` bash
+```
 default-browser set firefox
 ```
 
@@ -34,7 +34,7 @@ default-browser set firefox
 
 To list all the browsers which you can set as default web browsers, run:
 
-``` bash
+```
 default-browser list
 ```
 
@@ -42,7 +42,7 @@ default-browser list
 
 To list the current default web browser, run:
 
-``` bash
+```
 default-browser current
 ```
 
