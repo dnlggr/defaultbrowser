@@ -6,7 +6,7 @@ build:
 	swift build -c release --disable-sandbox
 
 install: build
-	install ".build/release/DefaultBrowser" "$(bindir)/default-browser"
+	install -d ".build/release/DefaultBrowser" "$(bindir)/default-browser"
 
 uninstall:
 	rm -rf "$(bindir)/default-browser"
