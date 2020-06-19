@@ -6,7 +6,7 @@ A Swift CLI and accompanying Alfred workflow to change the default web browser o
 
 ### Alfred Workflow
 
-Download the latest release from the [releases](https://github.com/dnlggr/DefaultBrowser/releases) page and open the `Alfred/default-browser.alfredworkflow` file.
+Download the `default-browser.alfredworkflow` file from the [latest release](https://github.com/dnlggr/DefaultBrowser/releases/latest) and open it once downloaded.
 
 ⚠️ The Alfred workflow needs the `default-browser` CLI installed on your system.
 
