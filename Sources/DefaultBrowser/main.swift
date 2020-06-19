@@ -1,3 +1,4 @@
+import Foundation
 import ArgumentParser
 import DefaultBrowserCore
 
@@ -47,14 +48,15 @@ extension CommandLineTool {
     struct List: ParsableCommand {
         static let configuration = CommandConfiguration(abstract: "Lists the available browsers.")
 
-        private let defaultMarker = "(default)"
+        @Flag(name: .shortAndLong, help: """
+            Verbose mode. List the available browsers' names, bundle ids, and paths as comma-separated-values.
+            """)
+        var verbose: Bool
 
         func run() {
-            let defaultBrowser = DefaultBrowser.current
-
             DefaultBrowser.all.forEach {
-                if $0 == defaultBrowser {
-                    print("\($0.name) \(defaultMarker)")
+                if verbose {
+                    print("\($0.name),\($0.bundleId),\($0.url?.path ?? "")")
                 } else {
                     print($0.name)
                 }

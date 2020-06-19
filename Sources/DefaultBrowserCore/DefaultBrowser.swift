@@ -1,3 +1,5 @@
+import Foundation
+
 public typealias BundleId = String
 
 public struct DefaultBrowser: Equatable {
@@ -11,8 +13,20 @@ public struct DefaultBrowser: Equatable {
         return String(name)
     }
 
+    public var url: URL? {
+        guard let url = LaunchServices.copyApplicationURL(for: bundleId) else {
+            return nil
+        }
+
+        return url
+    }
+
     init(bundleId: String) {
         self.bundleId = bundleId.lowercased()
+    }
+
+    public func makeDefault() throws {
+        try LaunchServices.setDefaultHandler(bundleId, for: .http)
     }
 }
 
@@ -29,9 +43,5 @@ public extension DefaultBrowser {
         }
 
         return DefaultBrowser(bundleId: bundleId)
-    }
-
-    func makeDefault() throws {
-        try LaunchServices.setDefaultHandler(bundleId, for: .http)
     }
 }

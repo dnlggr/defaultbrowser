@@ -31,6 +31,18 @@ class LaunchServices {
 
         return handlers.takeRetainedValue() as! [String]
     }
+
+    static func copyApplicationURL(for bundleId: BundleId) -> URL? {
+        guard let urls = LSCopyApplicationURLsForBundleIdentifier(bundleId as CFString, nil) else {
+            return nil
+        }
+
+        guard let bestMatch = (urls.takeRetainedValue() as! [URL]).first else {
+            return nil
+        }
+
+        return bestMatch
+    }
 }
 
 extension LaunchServices {
